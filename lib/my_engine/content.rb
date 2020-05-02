@@ -12,8 +12,12 @@ module MyEngine
 					def #{name}
 						p  "hello"
 				  end
-			  CODE
 
+				  def #{name}?
+				  	true
+				  end
+
+			  CODE
 		 	end
 		end
 	end	

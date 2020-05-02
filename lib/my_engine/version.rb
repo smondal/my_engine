@@ -1,3 +1,3 @@
 module MyEngine
-  VERSION = '0.1.9'
+  VERSION = '0.2.1'
 end
