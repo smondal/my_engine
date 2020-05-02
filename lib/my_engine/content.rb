@@ -1,6 +1,7 @@
 module MyEngine
 	module Content
 		extend ActiveSupport::Concern
+		include Attachement::Caching
 
 		def text_sandip
 			p "sandip"
@@ -20,5 +21,5 @@ module MyEngine
 			  CODE
 		 	end
 		end
-	end	
+	end
 end

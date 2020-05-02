@@ -1,8 +1,8 @@
 module MyEngine
   class Railtie < ::Rails::Railtie
-  	initializer "content load" do 
+  	initializer "content load" do
 	  	ActiveSupport.on_load(:active_record) do
-	   		 include MyEngine::Content
+	   	   include MyEngine::Content
 	    end
   	end
   end
