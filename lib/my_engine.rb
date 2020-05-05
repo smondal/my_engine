@@ -6,8 +6,16 @@ module MyEngine
 
 	autoload :Content
 
-	module Attachement
-		extend ActiveSupport::Autoload
-		autoload :Caching
-	end
+
+	# autoload_under "attachement" do
+	# 	# eager_autoload do
+	# 		autoload :Caching
+	# 	# end
+	# end
+
+	autoload :Caching, "my_engine/attachement/caching"
+	# module Attachement
+	# 	extend ActiveSupport::Autoload
+	# 	autoload :Caching
+	# end
 end
