@@ -3,7 +3,6 @@ module MyEngine
   # if you used module Attachement then you need to uncomment the module Attachement line.
   # module Attachement
     module Caching
-      p "here it is"
       def cache_digest
         Digest::SHA256.hexdigest("sandip")
       end
